@@ -8,7 +8,6 @@ import { CustomersController } from './customers/customers.controller';
 import { ProductsService } from './products/products.service';
 import { TagsModule } from './tags/tags.module';
 import { ProductsModule } from './products/products.module';
-import { Product } from './products/entities/product.entity';
 
 @Module({
   imports: [
@@ -23,7 +22,6 @@ import { Product } from './products/entities/product.entity';
       database: 'nestdb',
       retryDelay: 3000,
       autoLoadEntities: true,
-      entities: [Product],
       synchronize: true,
     }),
   ],
