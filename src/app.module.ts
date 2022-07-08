@@ -16,9 +16,9 @@ import { ProductsModule } from './products/products.module';
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
-      port: 8080,
+      port: 3306,
       username: 'root',
-      password: 'example',
+      password: 'root',
       database: 'nestdb',
       retryDelay: 3000,
       autoLoadEntities: true,
