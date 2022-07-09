@@ -8,6 +8,7 @@ import { CustomersController } from './customers/customers.controller';
 import { ProductsService } from './products/products.service';
 import { TagsModule } from './tags/tags.module';
 import { ProductsModule } from './products/products.module';
+import { ReviewsModule } from './reviews/reviews.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { ProductsModule } from './products/products.module';
       autoLoadEntities: true,
       synchronize: true,
     }),
+    ReviewsModule,
   ],
   controllers: [AppController, ProductsController, CustomersController],
   providers: [AppService, ProductsService],
