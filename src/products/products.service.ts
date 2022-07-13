@@ -42,7 +42,7 @@ export class ProductsService {
       throw new NotFoundException(`No se encuentra el producto ${id}`);
     }
     const sizes = // [{id: 1, size: 'S'}}, {id: 2, size: 'L'}]
-      body.sizes && // ['S', 'L'].map()
+      body.sizes && // ['pepito', 'L'].map()
       (await Promise.all(
         body.sizes.map((size) => this.selectOrCreateSize(size)),
       ));
